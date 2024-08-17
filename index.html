@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html>
+    
+    <head>
+
+        <title>Одна звезда</title>
+
+        <script type = "module" src = "./scripts/main.js" ></script>
+
+        <link rel = "stylesheet"  href = "./styles/main.css" />      
+ 
+    </head>
+
+    <body>
+
+        <section class = "container_headerToDoes">
+
+            <h1>toDoher</h1>
+        
+            <form id = "ids_addToDoForm" action = "false">
+
+                <input type = "text" name = "name" placeholder="имя задачи" />
+                <input type = "textarea" name = "text" placeholder="текст задачи" />
+                <input type = "hidden" name = "status" value="new" />
+
+                <button id = "ids_addToDo">добавить</button>
+
+            </form>
+
+        </section>
+
+        <br />
+        <h2>Список задач:</h2>
+        
+        <section id = "ids_container_toDoes" class = "container_toDoes">  
+
+        </section>
+        
+
+    </body>
+
+</html>

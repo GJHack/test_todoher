@@ -1,0 +1,43 @@
+:root {
+    --active_task_bgcolor: #74e951;
+    --deactive_task_bgcolor: #535353;
+}
+
+h1 {
+    text-align: center;
+}
+h1, h2, h3, h4, p, input, button {
+    font-family: sans-serif;
+}
+button {
+    white-space: nowrap;
+}
+.block_toDo {
+	display: grid;
+	grid-auto-flow: row;
+    align-items: center;
+	grid-template-columns: minmax(20%,200px) minmax(30%, 250px) minmax(15%, 100px) minmax(10%, 64px);
+    transition: all 1s;
+    padding: 5px 10px;
+}
+.block_toDo h3 {
+    font-family: sans-serif;
+    font-size: clamp(10px, 2vw, 18px);
+}
+
+.block_toDo.active_toDo {
+    background-color: var(--active_task_bgcolor);
+}
+
+.block_toDo.deactive_toDo {
+    background-color: var(--deactive_task_bgcolor);
+}
+
+@media screen and (max-width: 798px) {
+
+    .container_headerToDoes form {
+        display: grid;
+        grid-auto-flow: row;
+        row-gap: 9px;
+    }
+}
